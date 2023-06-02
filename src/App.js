@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import logo from './logo.png'; // Chemin vers votre logo
 import SerieCard from './components/SerieCard';
 import serie1Image from './images/you.jpg';
@@ -44,26 +44,6 @@ const series = [
 ];
 
 const App = () => {
-  const [showAddToHomeScreen, setShowAddToHomeScreen] = useState(false);
-
-  useEffect(() => {
-    const handleBeforeInstallPrompt = (event) => {
-      event.preventDefault();
-      setShowAddToHomeScreen(true);
-    };
-
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-
-    return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-    };
-  }, []);
-
-  const handleAddToHomeScreen = () => {
-    const promptEvent = new Event('beforeinstallprompt');
-    window.dispatchEvent(promptEvent);
-  };
-
   return (
     <div className="App">
       <div className="logo-container">
@@ -74,26 +54,20 @@ const App = () => {
         <h2 className="welcome-message">
           Bienvenue sur <span className="stream-text">Stream</span>
         </h2>
-        {showAddToHomeScreen && (
-          <button onClick={handleAddToHomeScreen} className="add-to-home-screen-button">
-            Ajouter à l'écran d'accueil
-          </button>
-        )}
         <div className="button-container">
-          <a href="https://uptobox.eu/login" target="_blank" rel="noopener noreferrer" className="button">
-            Connexion
-          </a>
-          <a href="https://uptobox.eu/register" target="_blank" rel="noopener noreferrer" className="button">
-            Inscription
-          </a>
-          <a href="https://uptobox.com/affiliate?aff_id=20782227" target="_blank" rel="noopener noreferrer" className="button">
-            Devenir Premium
-          </a>
+          <a href="https://uptobox.eu/login" target='blank' className="button">Connexion</a>
+          <a href="https://uptobox.eu/register" target='blank' className="button">Inscription</a>
+          <a href="https://uptobox.com/affiliate?aff_id=20782227" className="button">Devenir Premium</a>
         </div>
       </div>
       <div className="series-container">
         {series.map((serie, index) => (
-          <SerieCard key={index} title={serie.title} image={serie.image} url={serie.url} />
+          <SerieCard
+            key={index}
+            title={serie.title}
+            image={serie.image}
+            url={serie.url}
+          />
         ))}
       </div>
     </div>
