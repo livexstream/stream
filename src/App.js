@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.png'; // Chemin vers votre logo
+import { Helmet } from 'react-helmet';
 import SerieCard from './components/SerieCard';
 import serie1Image from './images/you.jpg';
 import serie2Image from './images/resident-alien.jpg';
@@ -46,6 +47,9 @@ const series = [
 const App = () => {
   return (
     <div className="App">
+      <Helmet>
+      <link rel="manifest" href="/manifest.json" />
+      </Helmet>
       <div className="logo-container">
         <img src={logo} alt="Logo de l'application" />
         <h1 className="app-name">Stream</h1>
