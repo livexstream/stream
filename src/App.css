@@ -1,24 +1,77 @@
 body {
   background-color: black;
 }
+
 .App {
   background-color: black;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px; /* Ajustez la valeur en fonction de vos besoins */
+  margin-top: 100px;
+  /* Ajustez la valeur en fonction de vos besoins */
 }
 
+/* Logo et titre */
 .logo-container {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
 }
+
 .logo-container img {
   width: 100px;
 }
 
+.app-name {
+  display: none;
+  /* Par défaut, masquer le nom de l'application */
+}
+
+/* Bannière et boutons */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: black;
+}
+
+.welcome-message {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.stream-text {
+  color: #7b3fff;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #7b3fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Card des séries */
+
+.series-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 .my-custom-card {
   width: 300px;
   height: 400px;
@@ -27,13 +80,11 @@ body {
   position: relative;
   margin: 10px;
 }
-
 .serie-image {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-
 .serie-title {
   position: absolute;
   bottom: 0;
@@ -51,13 +102,11 @@ body {
   text-overflow: ellipsis;
   transition: all 0.3s ease-in-out;
 }
-
 .serie-card.expanded .serie-title {
   white-space: normal;
   max-height: none;
   overflow: visible;
 }
-
 .serie-card.expanded .title-text {
   display: block;
   animation: expandTitle 0.3s ease-in-out;
@@ -66,8 +115,52 @@ body {
 /* Media queries pour la mise en page responsive */
 
 @media (max-width: 768px) {
+
+  /* Card des séries */
   .my-custom-card {
     width: 100%;
     max-width: 300px;
+  }
+
+  /* Bannière et boutons */
+  .banner {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .welcome-message {
+    font-size: 2rem;
+  }
+
+  .button-container {
+    flex-wrap: wrap;
+  }
+
+  .button {
+    margin: 5px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+
+  /* Pour les écrans desktop et tablette */
+
+  /* Logo et titre */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 10px;
+  }
+  .app-name {
+    display: block;
+    /* Afficher le nom de l'application */
+    color: #fff;
+    margin-left: 10px;
+    /* Ajustez la marge selon vos besoins */
   }
 }

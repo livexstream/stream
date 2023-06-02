@@ -48,15 +48,28 @@ const App = () => {
     <div className="App">
       <div className="logo-container">
         <img src={logo} alt="Logo de l'application" />
+        <h1 className="app-name">Stream</h1>
       </div>
-      {series.map((serie, index) => (
-        <SerieCard
-          key={index}
-          title={serie.title}
-          image={serie.image}
-          url={serie.url}
-        />
-      ))}
+      <div className="banner">
+        <h2 className="welcome-message">
+          Bienvenue sur <span className="stream-text">Stream</span>
+        </h2>
+        <div className="button-container">
+          <a href="https://uptobox.eu/login" target='blank' className="button">Connexion</a>
+          <a href="https://uptobox.eu/register" target='blank' className="button">Inscription</a>
+          <a href="https://uptobox.com/affiliate?aff_id=20782227" target='blank' className="button">Devenir Premium</a>
+        </div>
+      </div>
+      <div className="series-container">
+        {series.map((serie, index) => (
+          <SerieCard
+            key={index}
+            title={serie.title}
+            image={serie.image}
+            url={serie.url}
+          />
+        ))}
+      </div>
     </div>
   );
 };
