@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/stream/static/css/main.615a330e.css",
-    "main.js": "/stream/static/js/main.a2ae787d.js",
+    "main.css": "/stream/static/css/main.59b60c0e.css",
+    "main.js": "/stream/static/js/main.44b461fd.js",
     "static/js/787.6d185335.chunk.js": "/stream/static/js/787.6d185335.chunk.js",
     "static/media/911.jpg": "/stream/static/media/911.83a78ffc7ec8684e6a09.jpg",
     "static/media/gossipgirl.jpg": "/stream/static/media/gossipgirl.096d2540fa96a859dfe1.jpg",
@@ -10,12 +10,12 @@
     "static/media/resident-alien.jpg": "/stream/static/media/resident-alien.2d152de8e26ce69d33bf.jpg",
     "static/media/you.jpg": "/stream/static/media/you.d08fbf4505707c2a5109.jpg",
     "index.html": "/stream/index.html",
-    "main.615a330e.css.map": "/stream/static/css/main.615a330e.css.map",
-    "main.a2ae787d.js.map": "/stream/static/js/main.a2ae787d.js.map",
+    "main.59b60c0e.css.map": "/stream/static/css/main.59b60c0e.css.map",
+    "main.44b461fd.js.map": "/stream/static/js/main.44b461fd.js.map",
     "787.6d185335.chunk.js.map": "/stream/static/js/787.6d185335.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.615a330e.css",
-    "static/js/main.a2ae787d.js"
+    "static/css/main.59b60c0e.css",
+    "static/js/main.44b461fd.js"
   ]
 }
