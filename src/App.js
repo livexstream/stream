@@ -57,7 +57,7 @@ const App = () => {
         <div className="button-container">
           <a href="https://uptobox.eu/login" target='blank' className="button">Connexion</a>
           <a href="https://uptobox.eu/register" target='blank' className="button">Inscription</a>
-          <a href="https://uptobox.com/affiliate?aff_id=20782227" className="button">Devenir Premium</a>
+          <a href="https://uptobox.eu/affiliate?aff_id=20782227" target='blank' className="button">Devenir Premium</a>
         </div>
       </div>
       <div className="series-container">
