@@ -39,7 +39,7 @@ const series = [
   {
     title: '911 : Lone star',
     image: serie6Image,
-    url: 'https://t.me/c/1807130301/?'
+    url: 'https://t.me/c/1807130301/123'
   },
   {
     title: 'Silo',
