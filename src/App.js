@@ -44,7 +44,7 @@ const series = [
   {
     title: 'Silo',
     image: serie7Image,
-    url: 'https://t.me/c/1807130301/115'
+    url: 'https://t.me/c/1807130301/107'
   },
   // Ajoutez d'autres séries si nécessaire
 ];
