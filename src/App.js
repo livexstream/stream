@@ -24,7 +24,7 @@ const series = [
   {
     title: 'Moonhaven',
     image: serie3Image,
-    url: 'https://t.me/c/1807130301/?'
+    url: 'https://t.me/c/1807130301/115'
   },
   {
     title: 'Gossip Girl',
