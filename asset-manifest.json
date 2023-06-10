@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/stream/static/css/main.93475ec8.css",
-    "main.js": "/stream/static/js/main.fdd8d54e.js",
+    "main.js": "/stream/static/js/main.0c8a561f.js",
+    "static/media/the-crowded-room.jpg": "/stream/static/media/the-crowded-room.9c223cec6988ff4e3d51.jpg",
     "static/media/the-idol.jpg": "/stream/static/media/the-idol.d9d78086f6458700e248.jpg",
     "static/media/911.jpg": "/stream/static/media/911.83a78ffc7ec8684e6a09.jpg",
     "static/media/gossipgirl.jpg": "/stream/static/media/gossipgirl.096d2540fa96a859dfe1.jpg",
@@ -12,10 +13,10 @@
     "static/media/you.jpg": "/stream/static/media/you.d08fbf4505707c2a5109.jpg",
     "index.html": "/stream/index.html",
     "main.93475ec8.css.map": "/stream/static/css/main.93475ec8.css.map",
-    "main.fdd8d54e.js.map": "/stream/static/js/main.fdd8d54e.js.map"
+    "main.0c8a561f.js.map": "/stream/static/js/main.0c8a561f.js.map"
   },
   "entrypoints": [
     "static/css/main.93475ec8.css",
-    "static/js/main.fdd8d54e.js"
+    "static/js/main.0c8a561f.js"
   ]
 }
