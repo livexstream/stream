@@ -10,9 +10,35 @@ import serie6Image from './images/911-lone-star.jpg';
 import serie7Image from './images/silo.jpg';
 import serie8Image from './images/the-idol.jpg';
 import serie9Image from './images/the-crowded-room.jpg';
+import serie10Image from './images/code-quantum.jpg';
 import './App.css'; // Importez le fichier CSS
 
 const series = [
+  {
+    title: 'Code Quantum (2022)',
+    image: serie10Image,
+    url: 'https://t.me/c/1807130301/184'
+  },
+  {
+    title: 'The Crowded Room',
+    image: serie9Image,
+    url: 'https://t.me/c/1807130301/177'
+  },
+  {
+    title: 'The Idol',
+    image: serie8Image,
+    url: 'https://t.me/c/1807130301/136'
+  },
+  {
+    title: 'Silo',
+    image: serie7Image,
+    url: 'https://t.me/c/1807130301/107'
+  },
+  {
+    title: 'Moonhaven',
+    image: serie3Image,
+    url: 'https://t.me/c/1807130301/115'
+  },
   {
     title: 'You',
     image: serie1Image,
@@ -24,12 +50,7 @@ const series = [
     url: 'https://t.me/c/1807130301/76'
   },
   {
-    title: 'Moonhaven',
-    image: serie3Image,
-    url: 'https://t.me/c/1807130301/115'
-  },
-  {
-    title: 'Gossip Girl',
+    title: 'Gossip Girl (2007)',
     image: serie4Image,
     url: 'https://t.me/c/1807130301/?'
   },
@@ -42,21 +63,6 @@ const series = [
     title: '911 : Lone star',
     image: serie6Image,
     url: 'https://t.me/c/1807130301/123'
-  },
-  {
-    title: 'Silo',
-    image: serie7Image,
-    url: 'https://t.me/c/1807130301/107'
-  },
-  {
-    title: 'The Idol',
-    image: serie8Image,
-    url: 'https://t.me/c/1807130301/136'
-  },
-  {
-    title: 'The Crowded Room',
-    image: serie9Image,
-    url: 'https://t.me/c/1807130301/177'
   },
   // Ajoutez d'autres séries si nécessaire
 ];
