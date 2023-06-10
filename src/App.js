@@ -9,6 +9,7 @@ import serie5Image from './images/911.jpg';
 import serie6Image from './images/911-lone-star.jpg';
 import serie7Image from './images/silo.jpg';
 import serie8Image from './images/the-idol.jpg';
+import serie9Image from './images/the-crowded-room.jpg';
 import './App.css'; // Importez le fichier CSS
 
 const series = [
@@ -51,6 +52,11 @@ const series = [
     title: 'The Idol',
     image: serie8Image,
     url: 'https://t.me/c/1807130301/136'
+  },
+  {
+    title: 'The Crowded Room',
+    image: serie9Image,
+    url: 'https://t.me/c/1807130301/177'
   },
   // Ajoutez d'autres séries si nécessaire
 ];
