@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stream/static/css/main.93475ec8.css",
-    "main.js": "/stream/static/js/main.0ab37e9e.js",
+    "main.js": "/stream/static/js/main.07329014.js",
     "static/media/code-quantum.jpg": "/stream/static/media/code-quantum.482ca251dc981ee5b4d6.jpg",
     "static/media/the-crowded-room.jpg": "/stream/static/media/the-crowded-room.9c223cec6988ff4e3d51.jpg",
     "static/media/the-idol.jpg": "/stream/static/media/the-idol.d9d78086f6458700e248.jpg",
@@ -14,10 +14,10 @@
     "static/media/you.jpg": "/stream/static/media/you.d08fbf4505707c2a5109.jpg",
     "index.html": "/stream/index.html",
     "main.93475ec8.css.map": "/stream/static/css/main.93475ec8.css.map",
-    "main.0ab37e9e.js.map": "/stream/static/js/main.0ab37e9e.js.map"
+    "main.07329014.js.map": "/stream/static/js/main.07329014.js.map"
   },
   "entrypoints": [
     "static/css/main.93475ec8.css",
-    "static/js/main.0ab37e9e.js"
+    "static/js/main.07329014.js"
   ]
 }
