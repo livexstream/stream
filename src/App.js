@@ -76,7 +76,7 @@ const App = () => {
       </div>
       <div className="banner">
         <h2 className="welcome-message">
-          Bienvenue sur <span className="stream-text">DODO</span>
+          Bienvenue sur <span className="stream-text">Stream</span>
         </h2>
         <div className="button-container">
           <a href="https://uptobox.eu/login" target='blank' className="button">Connexion</a>
