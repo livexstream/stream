@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/stream/static/css/main.93475ec8.css",
-    "main.js": "/stream/static/js/main.07329014.js",
+    "main.css": "/stream/static/css/main.f6fc41c9.css",
+    "main.js": "/stream/static/js/main.908c670c.js",
     "static/media/code-quantum.jpg": "/stream/static/media/code-quantum.482ca251dc981ee5b4d6.jpg",
     "static/media/the-crowded-room.jpg": "/stream/static/media/the-crowded-room.9c223cec6988ff4e3d51.jpg",
-    "static/media/the-idol.jpg": "/stream/static/media/the-idol.d9d78086f6458700e248.jpg",
+    "static/media/banner-the-idol.jpg": "/stream/static/media/banner-the-idol.d9d78086f6458700e248.jpg",
     "static/media/911.jpg": "/stream/static/media/911.83a78ffc7ec8684e6a09.jpg",
     "static/media/gossipgirl.jpg": "/stream/static/media/gossipgirl.096d2540fa96a859dfe1.jpg",
+    "static/media/icon-platform.png": "/stream/static/media/icon-platform.991671163e2866aee7d4.png",
     "static/media/911-lone-star.jpg": "/stream/static/media/911-lone-star.df7b8325a0394c355ea2.jpg",
     "static/media/silo.jpg": "/stream/static/media/silo.fe4a5dbfab31d0a87cfc.jpg",
     "static/media/moonhaven.jpg": "/stream/static/media/moonhaven.2fdb3665e52a3ec2ceb3.jpg",
     "static/media/resident-alien.jpg": "/stream/static/media/resident-alien.9c88dc60ea186bed625c.jpg",
     "static/media/you.jpg": "/stream/static/media/you.d08fbf4505707c2a5109.jpg",
+    "static/media/insta-icon.png": "/stream/static/media/insta-icon.503a59f2446a2da84775.png",
+    "static/media/ytb-icon.png": "/stream/static/media/ytb-icon.4e27050f7ff8f80768b6.png",
+    "static/media/x-icon.png": "/stream/static/media/x-icon.73ff66447431c58ba819.png",
     "index.html": "/stream/index.html",
-    "main.93475ec8.css.map": "/stream/static/css/main.93475ec8.css.map",
-    "main.07329014.js.map": "/stream/static/js/main.07329014.js.map"
+    "main.f6fc41c9.css.map": "/stream/static/css/main.f6fc41c9.css.map",
+    "main.908c670c.js.map": "/stream/static/js/main.908c670c.js.map"
   },
   "entrypoints": [
-    "static/css/main.93475ec8.css",
-    "static/js/main.07329014.js"
+    "static/css/main.f6fc41c9.css",
+    "static/js/main.908c670c.js"
   ]
 }
