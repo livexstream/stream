@@ -8,62 +8,44 @@ import serie4Image from './images/gossipgirl.jpg';
 import serie5Image from './images/911.jpg';
 import serie6Image from './images/911-lone-star.jpg';
 import serie7Image from './images/silo.jpg';
-import serie8Image from './images/the-idol.jpg';
+import bannerTheIdol from './images/banner-the-idol.jpg';
+import iconPlatform from './images/icon-platform.png'
 import serie9Image from './images/the-crowded-room.jpg';
 import serie10Image from './images/code-quantum.jpg';
+import ytbIcon from './images/ytb-icon.png'
+import instaIcon from './images/insta-icon.png'
+import xIcon from './images/x-icon.png'
 import './App.css'; // Importez le fichier CSS
 
 const series = [
   {
-    title: 'Code Quantum (2022)',
-    image: serie10Image,
-    url: 'https://t.me/c/1807130301/184'
-  },
-  {
-    title: 'The Crowded Room',
-    image: serie9Image,
-    url: 'https://t.me/c/1807130301/177'
+    title: 'The Idol',
+    text1: 'VF - HD',
+    banner: bannerTheIdol,
+    seasonAvailable: 'Liste des saisons disponible :',
+    resume: 'Cette série est présentée Hors Compétition au Festival de Cannes 2023Suite à sa dernière tournée entachée par une dépression nerveuse, Jocelyn est déterminée à récupérer son titre de pop star la plus populaire et sexy d Amérique. Tedros, un propriétaire de boîte de nuit au passé trouble, ranime la flamme en elle. Cette nouvelle romance l’entraînera-t-elle au sommet de son art, ou la fera-t-elle basculer dans les tréfonds de son âme ?',
+    btnSeason1: 'Saison 1',
+    text2: 'Disponible sur Prime Vidéo (Pass Warner)',
+    platformAvailable: iconPlatform,
+    ytbIcon: ytbIcon,
+    instaIcon: instaIcon,
+    xIcon: xIcon,
+    url: 'https://stream.live/#episodeTheIdols1e01'
   },
   {
     title: 'The Idol',
-    image: serie8Image,
-    url: 'https://t.me/c/1807130301/136'
-  },
-  {
-    title: 'Silo',
-    image: serie7Image,
-    url: 'https://t.me/c/1807130301/107'
-  },
-  {
-    title: 'Moonhaven',
-    image: serie3Image,
-    url: 'https://t.me/c/1807130301/115'
-  },
-  {
-    title: 'You',
-    image: serie1Image,
-    url: 'https://t.me/c/1807130301/95'
-  },
-  {
-    title: 'Resident alien',
-    image: serie2Image,
-    url: 'https://t.me/c/1807130301/76'
-  },
-  {
-    title: 'Gossip Girl (2007)',
-    image: serie4Image,
-    url: 'https://t.me/c/1807130301/?'
-  },
-  {
-    title: '911',
-    image: serie5Image,
-    url: 'https://t.me/c/1807130301/?'
-  },
-  {
-    title: '911 : Lone star',
-    image: serie6Image,
-    url: 'https://t.me/c/1807130301/123'
-  },
+    text1: 'VF - HD',
+    banner: bannerTheIdol,
+    seasonAvailable: 'Liste des saisons disponible :',
+    resume: 'Cette série est présentée Hors Compétition au Festival de Cannes 2023Suite à sa dernière tournée entachée par une dépression nerveuse, Jocelyn est déterminée à récupérer son titre de pop star la plus populaire et sexy d Amérique. Tedros, un propriétaire de boîte de nuit au passé trouble, ranime la flamme en elle. Cette nouvelle romance l’entraînera-t-elle au sommet de son art, ou la fera-t-elle basculer dans les tréfonds de son âme ?',
+    btnSeason1: 'Saison 1',
+    text2: 'Disponible sur Prime Vidéo (Pass Warner)',
+    platformAvailable: iconPlatform,
+    ytbIcon: ytbIcon,
+    instaIcon: instaIcon,
+    xIcon: xIcon,
+    url: 'https://stream.live/#episodeTheIdols1e01'
+  }
   // Ajoutez d'autres séries si nécessaire
 ];
 
@@ -89,7 +71,16 @@ const App = () => {
           <SerieCard
             key={index}
             title={serie.title}
-            image={serie.image}
+            text1={serie.text1}
+            banner={serie.banner}
+            resume={serie.resume}
+            seasonAvailable={serie.seasonAvailable}
+            btnSeason1={serie.btnSeason1}
+            text2={serie.text2}
+            platformAvailable={serie.platformAvailable}
+            ytbIcon={serie.ytbIcon}
+            instaIcon={serie.instaIcon}
+            xIcon={serie.xIcon}
             url={serie.url}
           />
         ))}

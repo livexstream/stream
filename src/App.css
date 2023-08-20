@@ -1,14 +1,8 @@
 body {
-  background-color: black;
-}
-
-.App {
-  background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 100px;
-  /* Ajustez la valeur en fonction de vos besoins */
+  background-color: #000;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
 }
 
 /* Logo et titre */
@@ -16,16 +10,20 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .logo-container img {
-  width: 100px;
+  width: 80px;
 }
 
 .app-name {
-  display: none;
-  /* Par défaut, masquer le nom de l'application */
+  display: block;
+  font-size: 1.2rem;
+  margin-left: 10px;
 }
 
 /* Bannière et boutons */
@@ -33,15 +31,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
   padding: 20px;
-  background-color: black;
+  background-color: #000;
+  border: 1px solid #7b3fff;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .welcome-message {
-  color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .stream-text {
@@ -52,7 +54,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  flex-wrap: wrap;
 }
 
 .button {
@@ -62,108 +63,135 @@ body {
   background-color: #7b3fff;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Card des séries */
+.button:hover {
+  background-color: #5c2cb9;
+}
 
+/* Serie Card */
 .series-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
-.my-custom-card {
-  width: 300px;
-  height: 400px;
+
+.serie-card {
+  background-color: #000;
+  border-radius: 8px;
+  border: 1px solid #7b3fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
   cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  margin: 10px;
-  display: flex;
-  flex-direction: column; /* Ajout de cette ligne */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.serie-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  flex-grow: 1; /* Ajout de cette ligne */
+
+.serie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .serie-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  font-size: 16px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.serie-text1 {
+  font-size: 1rem;
+  color: #7b3fff;
+}
+
+.container-banner-resume {
+  display: flex;
+}
+.serie-banner {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.elements-card {
+  padding: 1rem;
+}
+
+.serie-resume {
+  font-size: 1rem;
   font-weight: bold;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: all 0.3s ease-in-out;
-}
-.serie-card.expanded .serie-title {
-  white-space: normal;
-  max-height: none;
-  overflow: visible;
-}
-.serie-card.expanded .title-text {
-  display: block;
-  animation: expandTitle 0.3s ease-in-out;
+  font-style: italic;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
-/* Media queries pour la mise en page responsive */
+.serie-season-available {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
+}
 
+.serie-btn-season-available {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #7b3fff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.serie-btn-season-available:hover {
+  background-color: #5c2cb9;
+}
+
+.container-platform-available {
+display: flex;
+align-items: center;
+}
+
+.serie-text2 {
+  font-weight: bold;
+}
+
+.icon-platform-available {
+  width: 5rem;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 1rem;
+}
+
+.circular-image {
+  width: 2rem; /* Ajustez la largeur et la hauteur selon vos besoins */
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden; /* Assurez-vous que le contenu de l'image est masqué en dehors du cercle */
+}
+
+.container-social-icon img {
+  width: 2rem;
+  padding: 1rem;
+}
+
+.legal-protection-text {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #737373;
+}
+
+/* Media queries */
 @media (max-width: 768px) {
-
-  /* Card des séries */
-  .my-custom-card {
-    width: 100%;
-    max-width: 300px;
+  .serie-card {
+    width: 90%;
   }
-
-  /* Bannière et boutons */
-  .banner {
-    margin-top: 10px;
-    padding: 10px;
-  }
-
-  .welcome-message {
-    font-size: 2rem;
-  }
-
-  .button-container {
-    flex-wrap: wrap;
-  }
-
-  .button {
-    margin: 5px;
-    width: 100%;
-  }
-}
-
-@media (min-width: 769px) {
-
-  /* Pour les écrans desktop et tablette */
-
-  /* Logo et titre */
-  .logo-container {
+  .container-banner-resume {
     display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    padding: 10px;
-  }
-  .app-name {
-    display: block;
-    /* Afficher le nom de l'application */
-    color: #fff;
-    margin-left: 10px;
-    /* Ajustez la marge selon vos besoins */
-  }
+    flex-direction: column;
+}
 }
