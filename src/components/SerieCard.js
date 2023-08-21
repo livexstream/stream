@@ -13,21 +13,21 @@ const SerieCard = ({ title, text1, banner, resume, seasonAvailable, btnSeason1, 
       </div>
       <div className="container-banner-resume">
         <img className="serie-banner" src={banner} alt={title} />
-          <div className="elements-card">
-            <p className="serie-resume">{resume}</p>
-            <h4 className="serie-season-available">{seasonAvailable}</h4>
-            <a className="serie-btn-season-available" href="#">{btnSeason1}</a>
-            <div className="container-platform-available">
-              <h5 className="serie-text2">{text2}</h5>
-              <img className="icon-platform-available circular-image" src={platformAvailable} alt="Platform Icon" />
-            </div>  
-            <div className="container-social-icon">
-              <img className="serie-ytb-icon" src={ytbIcon} alt="YouTube Icon" />
-              <img className="serie-insta-icon" src={instaIcon} alt="Instagram Icon" />
-              <img className="serie-x-icon" src={xIcon} alt="X Icon" />
-            </div>
-            <span className="legal-protection-text">Texte de protection légale</span>
+        <div className="elements-card">
+          <p className="serie-resume">{resume}</p>
+          <h4 className="serie-season-available">{seasonAvailable}</h4>
+          <a className="serie-btn-season-available" href="https://t.me/c/1807130301/138">{btnSeason1}</a>
+          <div className="container-platform-available">
+            <h5 className="serie-text2">{text2}</h5>
+            <img className="icon-platform-available circular-image" src={platformAvailable} alt="Platform Icon" />
+          </div>  
+          <div className="container-social-icon">
+            <img className="serie-ytb-icon" src={ytbIcon} alt="YouTube Icon" />
+            <img className="serie-insta-icon" src={instaIcon} alt="Instagram Icon" />
+            <img className="serie-x-icon" src={xIcon} alt="X Icon" />
           </div>
+          <span className="legal-protection-text">Texte de protection légale</span>
+        </div>
       </div>
     </div>
   );

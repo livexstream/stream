@@ -1,23 +1,18 @@
 import React from 'react';
 import logo from './logo.png'; // Chemin vers votre logo
-import SerieCard from './components/SerieCard';
-import serie1Image from './images/you.jpg';
-import serie2Image from './images/resident-alien.jpg';
-import serie3Image from './images/moonhaven.jpg';
-import serie4Image from './images/gossipgirl.jpg';
-import serie5Image from './images/911.jpg';
-import serie6Image from './images/911-lone-star.jpg';
-import serie7Image from './images/silo.jpg';
+//import SerieCard from './components/SerieCard';
+import EpisodeCard from './components/EpisodeCard';
 import bannerTheIdol from './images/banner-the-idol.jpg';
+import cover1x04theIdol from './images/cover-1x04-theIdol.jpg'
+import cover1x03theIdol from './images/cover-1x03-theIdol.jpg'
 import iconPlatform from './images/icon-platform.png'
-import serie9Image from './images/the-crowded-room.jpg';
-import serie10Image from './images/code-quantum.jpg';
+import iconDownload from './images/icon-download.png'
 import ytbIcon from './images/ytb-icon.png'
 import instaIcon from './images/insta-icon.png'
 import xIcon from './images/x-icon.png'
 import './App.css'; // Importez le fichier CSS
 
-const series = [
+{/*const series = [
   {
     title: 'The Idol',
     text1: 'VF - HD',
@@ -30,7 +25,7 @@ const series = [
     ytbIcon: ytbIcon,
     instaIcon: instaIcon,
     xIcon: xIcon,
-    url: 'https://stream.live/#episodeTheIdols1e01'
+    url: 'https://t.me/c/1807130301/138'
   },
   {
     title: 'The Idol',
@@ -44,9 +39,35 @@ const series = [
     ytbIcon: ytbIcon,
     instaIcon: instaIcon,
     xIcon: xIcon,
-    url: 'https://stream.live/#episodeTheIdols1e01'
+    url: 'https://t.me/c/1807130301/138'
   }
   // Ajoutez d'autres séries si nécessaire
+];*/}
+
+const episodes = [
+  {
+    title: 'The Idol - Saison 1',
+    subtitle: 'Episode 4 - Les étoiles appartiennent au monde',
+    times: '(59 mn)',
+    cover: cover1x04theIdol,
+    resume: 'Tout en luttant pour le dessus dans sa relation avec Tedros, Jocelyn devient déterminée à présenter son nouveau personnage au monde. Plus tard, l équipe de Jocelyn discute de son implication croissante avec Tedros et son entourage.',
+    qlt: 'Blu-ray (1080p)',
+    size: '3.96 Go',
+    icon: iconDownload,
+    url: 'https://uptobox.eu/6dkig1y1m1mk'
+  },
+  {
+    title: 'The Idol - Saison 1',
+    subtitle: 'Episode 3 - Aube',
+    times: '(45 mn)',
+    cover: cover1x03theIdol,
+    resume: 'Alors que Tedros s insère dans la vie de Jocelyn en offrant des commentaires sur sa garde-robe et ses collaborateurs, Leia fait part de ses préoccupations croissantes à Chaim et Destiny.',
+    qlt: 'Blu-ray (1080p)',
+    size: '3.73 Go',
+    icon: iconDownload,
+    url: 'https://uptobox.eu/2mq0yo5w0fbc'
+  }
+  // Ajoutez d'autres épisodes si nécessaire
 ];
 
 const App = () => {
@@ -66,7 +87,7 @@ const App = () => {
           <a href="https://uptobox.eu/affiliate?aff_id=20782227" target='blank' className="button">Devenir Premium</a>
         </div>
       </div>
-      <div className="series-container">
+      {/*<div className="series-container">
         {series.map((serie, index) => (
           <SerieCard
             key={index}
@@ -82,6 +103,23 @@ const App = () => {
             instaIcon={serie.instaIcon}
             xIcon={serie.xIcon}
             url={serie.url}
+          />
+        ))}
+      </div>*/}
+      <div className="episode-container">
+        {episodes.map((episode, index) => (
+          <EpisodeCard
+            key={index}
+            title={episode.title}
+            subtitle={episode.subtitle}
+            times={episode.times}
+            cover={episode.cover}
+            resume={episode.resume}
+            qlt={episode.qlt}
+            size={episode.size}
+            linkDownload={episode.linkDownload}
+            icon={episode.icon}
+            url={episode.url}
           />
         ))}
       </div>
