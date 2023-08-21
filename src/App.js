@@ -3,8 +3,8 @@ import logo from './logo.png'; // Chemin vers votre logo
 //import SerieCard from './components/SerieCard';
 import EpisodeCard from './components/EpisodeCard';
 import bannerTheIdol from './images/banner-the-idol.jpg';
-import cover1x04theIdol from './images/cover-1x04-theIdol.jpg'
-import cover1x03theIdol from './images/cover-1x03-theIdol.jpg'
+import cover1x04theIdol from './images/cover-1x04-theIdol.png'
+import cover1x03theIdol from './images/cover-1x03-theIdol.png'
 import iconPlatform from './images/icon-platform.png'
 import iconDownload from './images/icon-download.png'
 import ytbIcon from './images/ytb-icon.png'
