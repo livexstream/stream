@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stream/static/css/main.cefc3cb0.css",
+    "main.css": "/stream/static/css/main.228caae2.css",
     "main.js": "/stream/static/js/main.08c8fcdb.js",
     "static/media/banner-the-idol.jpg": "/stream/static/media/banner-the-idol.d9d78086f6458700e248.jpg",
     "static/media/icon-platform.png": "/stream/static/media/icon-platform.991671163e2866aee7d4.png",
@@ -11,11 +11,11 @@
     "static/media/ytb-icon.png": "/stream/static/media/ytb-icon.4e27050f7ff8f80768b6.png",
     "static/media/x-icon.png": "/stream/static/media/x-icon.73ff66447431c58ba819.png",
     "index.html": "/stream/index.html",
-    "main.cefc3cb0.css.map": "/stream/static/css/main.cefc3cb0.css.map",
+    "main.228caae2.css.map": "/stream/static/css/main.228caae2.css.map",
     "main.08c8fcdb.js.map": "/stream/static/js/main.08c8fcdb.js.map"
   },
   "entrypoints": [
-    "static/css/main.cefc3cb0.css",
+    "static/css/main.228caae2.css",
     "static/js/main.08c8fcdb.js"
   ]
 }
